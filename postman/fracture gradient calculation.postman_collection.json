@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "744e3884-0e40-4411-8f70-bea2ccbd8b39",
+		"name": "fracture gradient calculation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "water 3000",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"water-deep-layer\" : 1000,\n    \"deep-interval-data\" : 50,\n    \"observed-transit-time\" : [150,150,150,150,165,158,155,148,149,145,\n    142,141,149,140,138,137,135,133,132,126,123,125,124,121,118,119,115,\n    105,104,110,119,113,112,109,96,105,97,101,95,94,98,96,100,97,101,98,\n    102,99,105,100,110,109,97,95,96,98,100,105,99,110,102,110,105,115,108,\n    106,105,103,102,101,99]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
